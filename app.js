@@ -4,10 +4,10 @@ const { log } = require("console");
 
 
    const url ="https://api.github.com"
-   let endP="/users/EsmailAHBAl"
+   const endP="/users/"
 
 
-  //Higher
+   //Higher-Order Functions
     const getDataFromApi =(url)=>(endP)=>axios
     .get(url+endP).
     then(result=>result.data)
